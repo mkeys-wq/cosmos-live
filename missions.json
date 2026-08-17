@@ -1,0 +1,158 @@
+{
+  "_meta": {
+    "updated": "2026-08-16T00:00:00Z",
+    "note": "Metadados manuais; campos 'live' calculados por scripts/update-missions.mjs (Voyager, JWST usam interpolação linear)."
+  },
+  "missions": [
+    {
+      "id": "jwst",
+      "name": "James Webb Space Telescope",
+      "agency": "NASA · ESA · CSA",
+      "status": "active",
+      "since": "2021",
+      "description": "O maior telescópio espacial já construído. Observa em infravermelho a partir do ponto de Lagrange L2, a 1,5 milhões de km da Terra. Descobriu recentemente um buraco negro supermassivo numa das galáxias mais distantes já observadas.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Webb%27s_First_Deep_Field.jpg/1200px-Webb%27s_First_Deep_Field.jpg",
+      "image_credit": "NASA / ESA / CSA / STScI",
+      "image_fallback": { "glyph": "🔭", "text": "James Webb · Deep Field · SMACS 0723" },
+      "location": "L2",
+      "live": { "distance_km": 1500000 },
+      "data": [["Local", "L2"], ["Dist", "1.5M km"]]
+    },
+    {
+      "id": "perseverance",
+      "name": "Perseverance Rover",
+      "agency": "NASA · JPL",
+      "status": "active",
+      "since": "2021",
+      "description": "A recolher amostras em Jezero Crater, Marte. Encontrou a \"Cheyava Falls\" — rocha com manchas que estudos de 2025 sugerem serem biossinaturas de possível vida microbiana antiga.",
+      "image_url": "https://mars.nasa.gov/system/resources/detail_files/25790_PIA24542-web.jpg",
+      "image_credit": "NASA / JPL-Caltech / MSSS",
+      "image_fallback": { "glyph": "🤖", "text": "Perseverance · Jezero Crater" },
+      "location": "Marte",
+      "live": { "sol_photos_updated": null },
+      "data": [["Local", "Jezero, Marte"], ["Amostras", "~30"]]
+    },
+    {
+      "id": "curiosity",
+      "name": "Curiosity Rover",
+      "agency": "NASA · JPL",
+      "status": "active",
+      "since": "2012",
+      "description": "O veterano. A escalar o Mount Sharp, na cratera Gale, há mais de uma década. Detectou moléculas orgânicas complexas e provou que Marte teve condições habitáveis num passado distante.",
+      "image_url": "https://mars.nasa.gov/system/resources/detail_files/26681_1-PIA25429-Curiosity-web.jpg",
+      "image_credit": "NASA / JPL-Caltech / MSSS",
+      "image_fallback": { "glyph": "🛰", "text": "Curiosity · Mount Sharp" },
+      "location": "Marte",
+      "data": [["Local", "Gale, Marte"], ["Distância", "36+ km"]]
+    },
+    {
+      "id": "europa-clipper",
+      "name": "Europa Clipper",
+      "agency": "NASA",
+      "status": "enroute",
+      "since": "2024",
+      "description": "A caminho de Europa, lua de Júpiter. Passa pela Terra a 3 de dezembro de 2026 numa manobra de assistência gravitacional. Chega a Júpiter em abril de 2030.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Europa_Clipper_spacecraft_model.png/1200px-Europa_Clipper_spacecraft_model.png",
+      "image_credit": "NASA / JPL-Caltech",
+      "image_fallback": { "glyph": "🚀", "text": "Europa Clipper · rumo a Júpiter" },
+      "data": [["Chegada Europa", "2030"], ["Flybys", "~50"]]
+    },
+    {
+      "id": "artemis-2",
+      "name": "Artemis II",
+      "agency": "NASA",
+      "status": "pending",
+      "since": "2026",
+      "description": "Primeira missão tripulada além da órbita terrestre baixa desde a Apollo 17 (1972). Quatro astronautas — Wiseman, Glover, Koch, Hansen — numa viagem de 10 dias à volta da Lua.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Artemis_II_crew_portrait.jpg/1200px-Artemis_II_crew_portrait.jpg",
+      "image_credit": "NASA",
+      "image_fallback": { "glyph": "👨‍🚀", "text": "Artemis II · regresso à Lua" },
+      "data": [["Tripulação", "4"], ["Duração", "~10 dias"]]
+    },
+    {
+      "id": "hubble",
+      "name": "Hubble Space Telescope",
+      "agency": "NASA · ESA",
+      "status": "active",
+      "since": "1990",
+      "description": "35 anos em órbita. Continua a produzir ciência ao lado do JWST.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Pillars_2014_HST_denoise_0.75_12.jpg/1200px-Pillars_2014_HST_denoise_0.75_12.jpg",
+      "image_credit": "NASA / ESA / Hubble Heritage",
+      "image_fallback": { "glyph": "🌌", "text": "Hubble · Pillars of Creation" },
+      "data": [["Altitude", "540 km"], ["Órbita nº", "200.000+"]]
+    },
+    {
+      "id": "bepicolombo",
+      "name": "BepiColombo",
+      "agency": "ESA · JAXA",
+      "status": "enroute",
+      "since": "2018",
+      "description": "A caminho de Mercúrio há 8 anos. Chega finalmente ao planeta mais próximo do Sol a 21 de novembro de 2026.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/BepiColombo_MPO.jpg/1200px-BepiColombo_MPO.jpg",
+      "image_credit": "ESA / ATG medialab",
+      "image_fallback": { "glyph": "☿", "text": "BepiColombo · rumo a Mercúrio" },
+      "data": [["Chegada", "21 Nov 2026"], ["Duo", "2 orbitadores"]]
+    },
+    {
+      "id": "iss",
+      "name": "Estação Espacial Internacional",
+      "agency": "NASA · Roscosmos · ESA · JAXA · CSA",
+      "status": "active",
+      "since": "2000",
+      "description": "A dar voltas à Terra a 400 km de altitude a cada 90 minutos, ininterruptamente ocupada há mais de 25 anos.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/International_Space_Station_after_undocking_of_STS-132.jpg/1200px-International_Space_Station_after_undocking_of_STS-132.jpg",
+      "image_credit": "NASA",
+      "image_fallback": { "glyph": "🛰", "text": "ISS · Estação Espacial Internacional" },
+      "data": [["Altitude", "~400 km"], ["Vel", "28.000 km/h"]]
+    },
+    {
+      "id": "roman",
+      "name": "Nancy Grace Roman Telescope",
+      "agency": "NASA",
+      "status": "pending",
+      "since": "2026",
+      "description": "O próximo grande observatório da NASA. Campo de visão 100× maior que o Hubble, em infravermelho.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Nancy_Grace_Roman_Space_Telescope_render.jpg/1200px-Nancy_Grace_Roman_Space_Telescope_render.jpg",
+      "image_credit": "NASA / GSFC",
+      "image_fallback": { "glyph": "🔭", "text": "Roman · lançamento 30 Ago 2026" },
+      "data": [["Destino", "L2"], ["Missão", "5+ anos"]]
+    },
+    {
+      "id": "osiris-apex",
+      "name": "OSIRIS-APEX",
+      "agency": "NASA",
+      "status": "enroute",
+      "since": "2023",
+      "description": "Continuação da OSIRIS-REx. Agora dirige-se para Apophis, o asteroide que fará uma passagem excecionalmente próxima da Terra em abril de 2029.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/99942_Apophis.jpg/1200px-99942_Apophis.jpg",
+      "image_credit": "NASA / Goddard / Univ. of Arizona",
+      "image_fallback": { "glyph": "☄", "text": "OSIRIS-APEX · rumo ao Apophis" },
+      "data": [["Encontro", "Abr 2029"], ["Alvo", "99942 Apophis"]]
+    },
+    {
+      "id": "voyager",
+      "name": "Voyager 1 & 2",
+      "agency": "NASA · JPL",
+      "status": "active",
+      "since": "1977",
+      "description": "As sondas mais distantes da humanidade. Voyager 1 está no espaço interestelar. O sinal leva ~22 horas a chegar. Ainda transmite dados 48 anos depois do lançamento.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Pale_Blue_Dot.png/800px-Pale_Blue_Dot.png",
+      "image_credit": "NASA / JPL — \"Pale Blue Dot\" (1990)",
+      "image_fallback": { "glyph": "✦", "text": "Voyager · Espaço Interestelar" },
+      "live": { "voyager1_km": 24600000000, "voyager2_km": 20500000000 },
+      "data": [["V1", "24.6 mil M km"], ["V2", "20.5 mil M km"]]
+    },
+    {
+      "id": "parker",
+      "name": "Parker Solar Probe",
+      "agency": "NASA",
+      "status": "active",
+      "since": "2018",
+      "description": "A sonda mais rápida já construída — atinge 692.000 km/h nas passagens perto do Sol. Já entrou na coroa solar.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Parker_Solar_Probe_%2825755735217%29.jpg/1200px-Parker_Solar_Probe_%2825755735217%29.jpg",
+      "image_credit": "NASA / Johns Hopkins APL",
+      "image_fallback": { "glyph": "☉", "text": "Parker Solar Probe" },
+      "data": [["Aprox. Sol", "6.1M km"], ["Vel máx", "692.000 km/h"]]
+    }
+  ]
+}

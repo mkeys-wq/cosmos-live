@@ -1,0 +1,154 @@
+{
+  "_meta": {
+    "updated": "2026-08-16T00:00:00Z",
+    "source": "manual · revisão anual",
+    "note": "Este ficheiro é validado anualmente. Os dados de eclipses vêm das tabelas oficiais do NASA Eclipse Website. Chuvas de meteoros da International Meteor Organization. Efemérides planetárias do JPL Horizons."
+  },
+  "categories": [
+    {
+      "key": "eclipses",
+      "name": "Eclipses",
+      "area": "eclipses",
+      "tagline": "A trilogia ibérica está a acontecer",
+      "color": "#E8975E",
+      "description": "O alinhamento perfeito entre Sol, Terra e Lua. Estamos numa década única — três eclipses solares tocam a Península Ibérica em pouco mais de dois anos. Depois, o próximo eclipse total em Portugal só chega em 2144.",
+      "events": [
+        {
+          "date": "2026-08-28T06:00:00+01:00",
+          "title": "Eclipse Lunar Parcial",
+          "location": "Américas · Atlântico",
+          "magnitude": "Magnitude 0.93",
+          "short": "Até 96% do disco lunar coberto",
+          "description": "A Lua atravessa a sombra da Terra — duas semanas depois do eclipse solar. A parte na sombra ganha um tom avermelhado profundo (efeito \"Lua de Sangue\"), resultado da luz solar filtrada pela atmosfera terrestre.",
+          "tags": ["Lunar", "Parcial", "Sem risco"],
+          "duration": "3h 18m",
+          "viewing": { "direction": "O", "altitude": "15°", "constellation": "Peixes", "bestTime": "05:30–06:20" }
+        },
+        {
+          "date": "2027-02-06T00:00:00+00:00",
+          "title": "Eclipse Solar Anular",
+          "location": "Atlântico Sul · Chile · Argentina",
+          "magnitude": "Anular",
+          "short": "\"Anel de fogo\" — não visível de Portugal",
+          "description": "A Lua está no apogeu — o ponto mais distante — e não consegue cobrir totalmente o Sol. Fica um anel de sol brilhante à volta da silhueta lunar. Faixa atravessa América do Sul.",
+          "tags": ["Solar", "Anular", "PT: não"],
+          "duration": "~4 min"
+        },
+        {
+          "date": "2027-08-02T12:23:00+01:00",
+          "title": "Eclipse Solar Total — Sul de Ibéria",
+          "location": "Espanha · Marrocos · Egito",
+          "magnitude": "Totalidade 6m 23s",
+          "short": "Trilogia Ibérica · capítulo 2",
+          "description": "Um dos mais longos eclipses solares totais visíveis em terra firme nas próximas décadas. Fronteira mais próxima para totalidade: Ayamonte-Huelva. Em Portugal, parcial ~90% no Algarve.",
+          "tags": ["Solar", "Total", "Ibéria"],
+          "duration": "6m 23s totalidade",
+          "viewing": { "direction": "S", "altitude": "65°", "constellation": "Câncer", "bestTime": "12:23–14:15" },
+          "link": "https://www.timeanddate.com/eclipse/solar/2027-august-2"
+        },
+        {
+          "date": "2028-01-26T00:00:00+00:00",
+          "title": "Eclipse Solar Anular — Ibéria",
+          "location": "Portugal · Espanha",
+          "magnitude": "Anular",
+          "short": "Trilogia Ibérica · capítulo 3",
+          "description": "Terceiro e último capítulo da Trilogia Ibérica. Anel de fogo visível de zonas de Portugal e Espanha. Depois deste, o próximo eclipse total em Portugal continental é só em 2144.",
+          "tags": ["Solar", "Anular", "PT: sim"],
+          "duration": "~3 min",
+          "viewing": { "direction": "SO", "altitude": "25°", "constellation": "Capricórnio", "bestTime": "a determinar" }
+        }
+      ]
+    },
+    {
+      "key": "meteoros",
+      "name": "Chuvas de Meteoros",
+      "area": "meteoros",
+      "tagline": "Rastos de cometas antigos",
+      "color": "#FF9060",
+      "description": "Todos os anos a Terra atravessa nuvens de poeira deixadas por cometas — em datas praticamente fixas. Cada estrela cadente é um grão do tamanho de uma ervilha a arder a dezenas de km por segundo na atmosfera.",
+      "events": [
+        { "date": "2026-10-08T04:00:00+01:00", "title": "Draconídeas", "short": "Variável, ocasionalmente explosiva", "description": "Chuva imprevisível — normalmente ténue (10/h) mas com registos históricos de tempestades de milhares por hora. Filha do cometa 21P/Giacobini-Zinner. Radiante em Draco (norte).", "tags": ["~10/h", "Variável", "21P/Giacobini"], "viewing": { "direction": "N", "altitude": "Alto", "constellation": "Draco", "bestTime": "Após 22h" } },
+        { "date": "2026-10-21T03:00:00+01:00", "title": "Oriónidas · Pico", "short": "Meteoros do cometa Halley", "description": "Vestígios visíveis do cometa 1P/Halley — pedaços deixados pela sua órbita de 76 anos. Ardem a 66 km/s, entre as mais rápidas do calendário. Radiante em Órion, visível depois das 22h.", "tags": ["~20/h", "66 km/s", "1P/Halley"], "viewing": { "direction": "ESE", "altitude": "Médio", "constellation": "Órion", "bestTime": "02h–05h" } },
+        { "date": "2026-11-17T04:00:00+00:00", "title": "Leónidas · Pico", "short": "Tempestades cíclicas de 33 em 33 anos", "description": "Chuva do cometa 55P/Tempel-Tuttle. Anos normais têm ~15/h, mas ocasionalmente produz tempestades espectaculares (1833, 1966, 2001 tiveram milhares por hora). Radiante em Leão.", "tags": ["~15/h", "71 km/s", "55P/Tempel"], "viewing": { "direction": "E", "altitude": "Médio", "constellation": "Leão", "bestTime": "02h–05h" } },
+        { "date": "2026-12-14T04:00:00+00:00", "title": "Geminídeas · Pico", "short": "A mais espetacular do ano", "description": "A mais intensa chuva anual — até 150/h. Única grande chuva conhecida com progenitor asteroide (3200 Faetonte) em vez de cometa. Meteoros lentos, brilhantes e coloridos. Muitos bólides.", "tags": ["~150/h", "35 km/s", "3200 Faetonte"], "viewing": { "direction": "E", "altitude": "Alto", "constellation": "Gémeos", "bestTime": "01h–04h" } },
+        { "date": "2026-12-22T09:00:00+00:00", "title": "Úrsidas", "short": "Discreta mas persistente", "description": "Chuva pequena mas fiável — ~10/h. Radiante próximo à Ursa Menor (por isso o nome). Filha do cometa 8P/Tuttle. Boa para quem quer ver meteoros no Natal.", "tags": ["~10/h", "Circumpolar", "8P/Tuttle"], "viewing": { "direction": "N", "altitude": "Alto", "constellation": "Ursa Menor", "bestTime": "Toda a noite" } },
+        { "date": "2027-01-03T15:00:00+00:00", "title": "Quadrântidas · Pico", "short": "Pico brutalmente curto — 6h", "description": "Uma das três chuvas mais intensas do ano (~110/h), mas o pico é excepcionalmente estreito — só 6 horas. Ver na noite certa é fundamental. Progenitor: asteroide 2003 EH1.", "tags": ["~110/h", "Pico 6h", "2003 EH1"], "viewing": { "direction": "N", "altitude": "Alto", "constellation": "Boieiro", "bestTime": "03h–06h" } },
+        { "date": "2027-04-22T15:00:00+01:00", "title": "Líridas · Pico", "short": "A mais antiga registada", "description": "Documentada há mais de 2700 anos por astrónomos chineses. Chuva modesta (~18/h) mas com bólides brilhantes. Filha do cometa C/1861 G1 Thatcher.", "tags": ["~18/h", "49 km/s", "C/1861 Thatcher"], "viewing": { "direction": "ENE", "altitude": "Médio", "constellation": "Lira", "bestTime": "02h–05h" } },
+        { "date": "2027-05-06T03:00:00+01:00", "title": "Eta Aquáridas · Pico", "short": "Segunda visita anual ao Halley", "description": "Outra chuva filha do cometa Halley — a Terra atravessa o seu rasto duas vezes por ano. Melhor visibilidade no hemisfério sul, mas visível a partir de Portugal antes do amanhecer.", "tags": ["~50/h", "66 km/s", "1P/Halley"], "viewing": { "direction": "E", "altitude": "Baixo", "constellation": "Aquário", "bestTime": "04h–05h30" } },
+        { "date": "2027-08-13T03:00:00+01:00", "title": "Perseidas 2027", "short": "Ano com Lua Crescente — condições difíceis", "description": "A chuva mais popular do verão. Em 2027 a fase lunar já não é tão favorável como em 2026 — Quarto Crescente reduz a taxa observável para cerca de metade.", "tags": ["~100/h", "59 km/s", "Swift-Tuttle"], "viewing": { "direction": "NE", "altitude": "Alto", "constellation": "Perseu", "bestTime": "00h–04h" } }
+      ]
+    },
+    {
+      "key": "luas",
+      "name": "Fases & Superluas",
+      "area": "luas",
+      "tagline": "Perigeus, apogeus, ciclos",
+      "color": "#C9D6E8",
+      "description": "A órbita da Lua não é um círculo — é uma elipse. Quando a Lua Cheia coincide com o perigeu (o ponto mais próximo), aparece 14% maior e 30% mais brilhante que numa Cheia média. É uma \"Superlua\".",
+      "events": [
+        { "date": "2026-10-07T04:47:00+01:00", "title": "Superlua do Caçador", "short": "Primeira de três superluas consecutivas", "description": "Lua Cheia a 361.500 km de distância. Início da trilogia de superluas de outono/inverno 2026.", "tags": ["Superlua", "361.500 km", "+12% brilho"], "viewing": { "direction": "Toda a noite", "altitude": "Varia", "constellation": "Peixes", "bestTime": "Toda a noite" } },
+        { "date": "2026-11-05T13:19:00+00:00", "title": "Superlua do Castor", "short": "A mais próxima do ano", "description": "A superlua mais próxima e brilhante de 2026 — 356.500 km. 14% maior e 30% mais brilhante que uma Cheia média.", "tags": ["Superlua", "356.500 km", "+30% brilho"], "viewing": { "direction": "Toda a noite", "altitude": "Alta", "constellation": "Áries", "bestTime": "Toda a noite" } },
+        { "date": "2026-12-04T23:14:00+00:00", "title": "Superlua Fria", "short": "Última superlua de 2026", "description": "Terceira superlua consecutiva. \"Cold Moon\" nas tradições norte-americanas. Coincide com o pico do inverno astronómico.", "tags": ["Superlua", "359.000 km", "Alta no céu"], "viewing": { "direction": "Toda a noite", "altitude": "Muito alta", "constellation": "Touro", "bestTime": "Toda a noite" } },
+        { "date": "2027-01-03T18:03:00+00:00", "title": "Lua Cheia do Lobo", "short": "Primeira lua cheia do ano", "description": "Não é superlua (mais distante), mas alta no céu invernal.", "tags": ["Cheia", "~380.000 km"], "viewing": { "direction": "Toda a noite", "altitude": "Alta", "constellation": "Gémeos", "bestTime": "Toda a noite" } },
+        { "date": "2027-08-19T05:36:00+01:00", "title": "Superlua Azul", "short": "Segunda Lua Cheia do mês", "description": "\"Blue Moon\" — segunda Lua Cheia num mês. Acontece a cada ~2,5 anos.", "tags": ["Superlua", "Blue Moon", "Perigeu"], "viewing": { "direction": "Toda a noite", "altitude": "Média", "constellation": "Aquário", "bestTime": "Toda a noite" } }
+      ]
+    },
+    {
+      "key": "missoes",
+      "name": "Missões Espaciais",
+      "area": "missoes",
+      "tagline": "Lançamentos · flybys · chegadas",
+      "color": "#7BB4E3",
+      "description": "Os grandes marcos programados da exploração espacial. Sondas que chegam ao destino, telescópios que abrem o olho, foguetes que descolam.",
+      "events": [
+        { "date": "2026-08-30T14:00:00+01:00", "title": "Lançamento — Nancy Grace Roman", "location": "Cabo Canaveral", "short": "O sucessor do Hubble em campo de visão", "description": "O próximo grande observatório da NASA. Campo de visão 100× maior que o do Hubble em infravermelho.", "tags": ["NASA", "Lançamento", "L2"] },
+        { "date": "2026-11-21T00:00:00+00:00", "title": "BepiColombo chega a Mercúrio", "location": "Órbita de Mercúrio", "short": "Fim de 8 anos de viagem", "description": "Depois de 8 anos e nove flybys planetários, ESA/JAXA finalmente entra em órbita de Mercúrio.", "tags": ["ESA", "JAXA", "Chegada"] },
+        { "date": "2026-12-03T00:00:00+00:00", "title": "Europa Clipper — flyby da Terra", "location": "Passagem sobre a Terra", "short": "Assistência gravitacional a caminho de Júpiter", "description": "A sonda passa pela Terra para ganhar velocidade rumo a Júpiter. Chegada a Europa em abril de 2030.", "tags": ["NASA", "Flyby", "Europa"] },
+        { "date": "2027-02-11T00:00:00+00:00", "title": "Artemis II — lançamento", "location": "Kennedy Space Center", "short": "Regresso da humanidade à Lua", "description": "Primeira missão tripulada além da órbita terrestre baixa desde a Apollo 17 (1972).", "tags": ["NASA", "Tripulado", "Lua"] },
+        { "date": "2028-04-13T00:00:00+01:00", "title": "Apophis — passagem histórica", "location": "A 32.000 km da Terra", "short": "Um asteroide mais perto que a Lua", "description": "O asteroide 99942 Apophis (340 m) passa a apenas 32.000 km da Terra — mais perto que os satélites geoestacionários.", "tags": ["Asteroide", "Passagem próxima", "Visível"], "viewing": { "direction": "Leste", "altitude": "Médio", "constellation": "Câncer", "bestTime": "19h-23h WEST" } }
+      ]
+    },
+    {
+      "key": "estacoes",
+      "name": "Estações",
+      "area": "estacoes",
+      "tagline": "Equinócios & solstícios",
+      "color": "#B8A76E",
+      "description": "Os quatro momentos que definem o ano astronómico. Equinócios: dia e noite iguais. Solstícios: dia mais longo ou mais curto.",
+      "events": [
+        { "date": "2026-09-22T14:19:00+01:00", "title": "Equinócio de Outono", "short": "Início do outono no norte", "description": "O eixo da Terra fica perpendicular à linha Sol-Terra. Todo o planeta tem exatamente 12h de dia e 12h de noite.", "tags": ["Norte: outono", "Sul: primavera"] },
+        { "date": "2026-12-21T15:03:00+00:00", "title": "Solstício de Inverno", "short": "Noite mais longa do ano", "description": "O Sol atinge a sua declinação mais baixa no hemisfério norte. Em Portugal, ~9h30 de dia.", "tags": ["Norte: inverno", "Sul: verão"] },
+        { "date": "2027-03-20T22:24:00+00:00", "title": "Equinócio de Primavera", "short": "Início da primavera no norte", "description": "Segundo equinócio anual. Auroras boreais voltam a intensificar-se.", "tags": ["Norte: primavera", "Sul: outono"] },
+        { "date": "2027-06-21T08:11:00+01:00", "title": "Solstício de Verão", "short": "Dia mais longo do ano", "description": "O Sol atinge o ponto mais alto no céu setentrional. Em Portugal, ~15h de dia.", "tags": ["Norte: verão", "Sul: inverno"] },
+        { "date": "2027-09-22T20:01:00+01:00", "title": "Equinócio de Outono 2027", "short": "Fim do verão astronómico", "description": "Segundo equinócio de 2027.", "tags": ["Norte: outono", "Sul: primavera"] }
+      ]
+    },
+    {
+      "key": "planetas",
+      "name": "Planetas",
+      "area": "planetas",
+      "tagline": "Oposições, conjunções, alinhamentos",
+      "color": "#E4C580",
+      "description": "Os planetas dançam à volta do Sol a velocidades diferentes. Ocasionalmente alinham-se em configurações espectaculares.",
+      "events": [
+        { "date": "2026-09-20T23:00:00+01:00", "title": "Saturno em oposição", "short": "Ponto mais brilhante do ano", "description": "A Terra passa entre o Sol e Saturno — nasce ao pôr-do-sol e brilha toda a noite.", "tags": ["Saturno", "Oposição", "Toda a noite"], "viewing": { "direction": "E ao anoitecer", "altitude": "Sobe toda a noite", "constellation": "Aquário", "bestTime": "Toda a noite" } },
+        { "date": "2026-12-11T05:00:00+00:00", "title": "Vénus + Marte em conjunção", "short": "Menos de 1° de separação", "description": "Vénus e Marte muito próximos no céu matinal, antes do amanhecer.", "tags": ["Vénus", "Marte", "Antes do amanhecer"], "viewing": { "direction": "SE", "altitude": "Baixo", "constellation": "Escorpião", "bestTime": "05h30–06h30" } },
+        { "date": "2027-01-10T22:00:00+00:00", "title": "Júpiter em oposição", "short": "O gigante gasoso no seu melhor", "description": "Júpiter mais próximo e brilhante. Com binóculos vêem-se as quatro luas galileanas.", "tags": ["Júpiter", "Oposição", "Luas visíveis"], "viewing": { "direction": "E ao anoitecer", "altitude": "Sobe toda a noite", "constellation": "Gémeos", "bestTime": "Toda a noite" } },
+        { "date": "2027-08-27T04:00:00+01:00", "title": "Alinhamento de cinco planetas", "short": "Mercúrio, Vénus, Marte, Júpiter, Saturno", "description": "Cinco planetas visíveis simultaneamente antes do amanhecer, formando um arco. Próxima repetição só em 2040.", "tags": ["5 planetas", "Amanhecer", "Raro"], "viewing": { "direction": "E-SE", "altitude": "Arco na eclíptica", "constellation": "Múltiplas", "bestTime": "05h–06h30" } }
+      ]
+    },
+    {
+      "key": "cometas",
+      "name": "Cometas & Passagens",
+      "area": "cometas",
+      "tagline": "Visitantes raros",
+      "color": "#8DE0E8",
+      "description": "Cometas descobertos recentemente, asteroides em passagem próxima. Os fenómenos mais imprevisíveis e emocionantes do céu.",
+      "events": [
+        { "date": "2026-09-15T00:00:00+01:00", "title": "Cometa C/2025 R2 no perigeu", "short": "Pode chegar a magnitude 6", "description": "Se se comportar como esperado, tornar-se-á visível com binóculos, potencialmente à vista desarmada em céu escuro.", "tags": ["C/2025 R2", "Binóculos", "Céu escuro"], "viewing": { "direction": "N", "altitude": "Circumpolar", "constellation": "Ursa Maior", "bestTime": "Toda a noite" } },
+        { "date": "2029-04-13T00:00:00+01:00", "title": "Apophis flyby da Terra", "short": "Asteroide passa a 32.000 km", "description": "O asteroide 99942 Apophis passa mais perto da Terra que a órbita geoestacionária. Visível à vista desarmada.", "tags": ["Apophis", "32.000 km", "Visível"], "viewing": { "direction": "Leste", "altitude": "Médio", "constellation": "Câncer", "bestTime": "19h-23h WEST" } },
+        { "date": "2061-07-28T00:00:00+01:00", "title": "Cometa Halley — regresso", "short": "A ver dentro de 35 anos", "description": "O cometa mais famoso da história regressa. Última passagem foi em 1986.", "tags": ["1P/Halley", "Uma vez em 76 anos", "Icónico"] }
+      ]
+    }
+  ]
+}

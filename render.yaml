@@ -1,0 +1,29 @@
+# render.yaml — Frontend estático COSMOS
+#
+# O frontend não precisa de build (é HTML puro).
+# Render serve a pasta directamente e faz refresh automático a cada push.
+
+services:
+  - type: web
+    name: cosmos
+    runtime: static
+    plan: free                     # Sites estáticos são grátis para sempre
+    region: frankfurt
+    buildCommand: ""               # Nada para construir
+    staticPublishPath: ./          # Serve a raiz do repo
+    headers:
+      # Cache dos dados JSON por 1 hora (permite GitHub Actions atualizar
+      # sem que os visitantes vejam versões velhas por muito tempo)
+      - path: /data/*
+        name: Cache-Control
+        value: "public, max-age=3600, must-revalidate"
+      # Cache do HTML por 5 min (equilibra atualizações vs performance)
+      - path: /*.html
+        name: Cache-Control
+        value: "public, max-age=300, must-revalidate"
+    routes:
+      # SPA-style routing — todos os caminhos servem o index.html
+      # (o router JS trata do hash routing depois)
+      - type: rewrite
+        source: /*
+        destination: /index.html

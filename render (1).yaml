@@ -1,0 +1,33 @@
+# render.yaml — Infrastructure-as-Code para o backend COSMOS
+#
+# Este ficheiro é lido automaticamente pelo Render quando ligas um repositório.
+# Descreve a stack completa: um Web Service (Node.js) + uma base de dados
+# PostgreSQL. Ao aplicar (clicando "Apply Blueprint" no Render), o serviço
+# fica com a variável DATABASE_URL automaticamente ligada à base de dados.
+
+services:
+  - type: web
+    name: cosmos-api
+    runtime: node
+    plan: free                    # Muda para "starter" ($7/mês) para evitar sleep após 15 min
+    region: frankfurt             # Alternativa: oregon, singapore, ohio, virginia
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: cosmos-db
+          property: connectionString
+      - key: FRONTEND_ORIGIN
+        sync: false               # Preenches manualmente no dashboard após deploy do frontend
+
+databases:
+  - name: cosmos-db
+    plan: free                    # Grátis 30 dias, depois $7/mês para o tier "basic-256mb"
+    region: frankfurt
+    databaseName: cosmos
+    user: cosmos
+    ipAllowList: []               # Vazio = só serviços dentro do Render podem ligar-se

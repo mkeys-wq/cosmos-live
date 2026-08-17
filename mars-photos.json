@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "updated": "2026-08-16T00:00:00Z",
+    "source": "NASA Mars Photos API",
+    "note": "Últimas fotos da Perseverance e Curiosity. Atualizado diariamente."
+  },
+  "perseverance": {
+    "latest_photo_url": "",
+    "sol": null,
+    "earth_date": null,
+    "camera": null
+  },
+  "curiosity": {
+    "latest_photo_url": "",
+    "sol": null,
+    "earth_date": null,
+    "camera": null
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_meta": {
+    "updated": "2026-08-16T00:00:00Z",
+    "source": "Celestrak (weekly)",
+    "note": "Atualizado por scripts/fetch-satellites.mjs via GitHub Action semanal"
+  },
+  "totals": {
+    "active": 11500,
+    "tracked_objects": 40500,
+    "note_active": "Estimativa total, todas as constelações e países. Cresce ~2.300 por ano só com a SpaceX.",
+    "note_tracked": "Inclui lixo espacial: fragmentos de foguetes, satélites desativados, colisões passadas."
+  },
+  "constellations": [
+    { "key": "starlink", "name": "Starlink", "operator": "SpaceX · US", "count": 10020, "pct": 87, "color": "corona", "note": "SpaceX atingiu esta marca a 17 de março de 2026. Um lançamento a cada 2,3 dias." },
+    { "key": "oneweb", "name": "OneWeb", "operator": "Eutelsat · UK", "count": 654, "pct": 5.7 },
+    { "key": "guowang", "name": "Guowang", "operator": "China · CN", "count": 350, "pct": 3 },
+    { "key": "iridium", "name": "Iridium", "operator": "Iridium · US", "count": 75, "pct": 0.65 },
+    { "key": "outros", "name": "Outros / científicos", "operator": "vários", "count": 400, "pct": 3.5 }
+  ],
+  "warning": {
+    "title": "Kessler em construção",
+    "body": "Em dezembro de 2025, um satélite Starlink explodiu a 418 km de altitude, criando destroços. A SpaceX prepara para 2026 a maior manobra coordenada de sempre: baixar 4.400 satélites de 550 km para 480 km, reduzindo o risco de colisão em cascata."
+  }
+}

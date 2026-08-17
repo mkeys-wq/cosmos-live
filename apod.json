@@ -1,0 +1,14 @@
+{
+  "_meta": {
+    "updated": "2026-08-16T00:00:00Z",
+    "source": "NASA APOD (daily)",
+    "note": "Atualizado por scripts/fetch-apod.mjs via GitHub Action diária. Cache local evita rate limiting da API NASA."
+  },
+  "date": "2026-08-16",
+  "title": "A carregar…",
+  "url": "",
+  "hdurl": "",
+  "explanation": "Aguardando primeira execução do script de atualização.",
+  "media_type": "image",
+  "copyright": null
+}
