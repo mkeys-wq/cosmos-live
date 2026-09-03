@@ -1,0 +1,14 @@
+{
+  "_meta": {
+    "updated": "2026-01-01T00:00:00Z",
+    "source": "NASA APOD (daily)",
+    "note": "Placeholder inicial — será substituído pelo primeiro workflow."
+  },
+  "date": "2026-01-01",
+  "title": "A carregar…",
+  "url": "",
+  "hdurl": "",
+  "explanation": "Aguardando primeira execução do script.",
+  "media_type": "image",
+  "copyright": null
+}
