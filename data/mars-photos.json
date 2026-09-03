@@ -1,19 +1,9 @@
 {
   "_meta": {
-    "updated": "2026-01-01T00:00:00Z",
+    "updated": "2026-09-03T21:40:38.079Z",
     "source": "NASA Mars Photos API",
-    "note": "Placeholder inicial."
+    "note": "Últimas fotos disponíveis dos rovers em Marte. Atualizado diariamente."
   },
-  "perseverance": {
-    "latest_photo_url": "",
-    "sol": null,
-    "earth_date": null,
-    "camera": null
-  },
-  "curiosity": {
-    "latest_photo_url": "",
-    "sol": null,
-    "earth_date": null,
-    "camera": null
-  }
+  "perseverance": null,
+  "curiosity": null
 }
