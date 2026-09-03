@@ -36,13 +36,15 @@ jobs:
         run: node scripts/update-missions.mjs
         continue-on-error: true
 
-      - name: Commit and push changes
+            - name: Commit and push changes
         run: |
           git config user.name "cosmos-bot"
           git config user.email "cosmos-bot@users.noreply.github.com"
-          git add data/
+          if [ -d "data" ]; then
+            git add data/ || true
+          fi
           if git diff --staged --quiet; then
-            echo "Nada mudou, sem commit"
+            echo "Nada mudou (ou pasta data/ vazia), sem commit"
           else
             git commit -m "chore(data): daily update $(date -u +%Y-%m-%d)"
             git push
