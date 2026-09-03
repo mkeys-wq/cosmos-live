@@ -1,10 +1,11 @@
 #!/usr/bin/env node
-import { writeFile } from 'node:fs/promises';
+import { mkdir, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const OUT = join(__dirname, '..', 'data', 'mars-photos.json');
+const DATA_DIR = join(__dirname, '..', 'data');
+const OUT = join(DATA_DIR, 'mars-photos.json');
 
 const KEY = process.env.NASA_API_KEY || 'DEMO_KEY';
 
@@ -46,6 +47,7 @@ async function main() {
     } : null
   };
 
+  await mkdir(DATA_DIR, { recursive: true });
   await writeFile(OUT, JSON.stringify(output, null, 2) + '\n', 'utf-8');
   console.log(`[MARS] Perseverance sol ${perseverance?.sol}, Curiosity sol ${curiosity?.sol}`);
 }
