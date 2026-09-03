@@ -1,0 +1,38 @@
+{
+  "_meta": {
+    "updated": "2026-01-01T00:00:00Z",
+    "note": "Placeholder inicial."
+  },
+  "missions": [
+    {
+      "id": "voyager",
+      "name": "Voyager 1 & 2",
+      "agency": "NASA · JPL",
+      "status": "active",
+      "since": "1977",
+      "description": "As sondas mais distantes da humanidade.",
+      "live": { "voyager1_km": 24600000000, "voyager2_km": 20500000000 },
+      "data": [["V1", "24.6 mil M km"], ["V2", "20.5 mil M km"]]
+    },
+    {
+      "id": "perseverance",
+      "name": "Perseverance",
+      "agency": "NASA",
+      "status": "active",
+      "since": "2021",
+      "description": "Rover em Marte.",
+      "image_url": "",
+      "image_credit": ""
+    },
+    {
+      "id": "curiosity",
+      "name": "Curiosity",
+      "agency": "NASA",
+      "status": "active",
+      "since": "2012",
+      "description": "Rover em Marte.",
+      "image_url": "",
+      "image_credit": ""
+    }
+  ]
+}
