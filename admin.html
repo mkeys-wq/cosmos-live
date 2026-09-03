@@ -9,11 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
 <style>
-:root {
-  --bg: #0B0D14; --bg-elev: #12141d; --text: #F2ECE0;
-  --muted: rgba(242,236,224,0.55); --corona: #E8975E; --danger: #E88060;
-  --hairline: rgba(255,255,255,0.08); --hairline-bright: rgba(255,255,255,0.14);
-}
+:root { --bg: #0B0D14; --bg-elev: #12141d; --text: #F2ECE0; --muted: rgba(242,236,224,0.55); --corona: #E8975E; --danger: #E88060; --hairline: rgba(255,255,255,0.08); --hairline-bright: rgba(255,255,255,0.14); }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { background: var(--bg); color: var(--text); font-family: 'Space Mono', monospace; padding: 60px 24px; min-height: 100vh; }
 .wrap { max-width: 900px; margin: 0 auto; }
@@ -55,16 +51,13 @@ button:hover { border-color: var(--corona); color: var(--corona); }
   <span class="eyebrow">COSMOS · Painel restrito</span>
   <h1>Gestão de <em>testemunhos</em></h1>
   <p class="intro">Ferramenta para apagar testemunhos submetidos. O token de admin fica guardado localmente neste browser. <a href="/">← Voltar ao site</a></p>
-
   <div class="auth">
     <label for="token">Token de admin</label>
     <input type="password" id="token" placeholder="Cola aqui o ADMIN_TOKEN definido no Render" autocomplete="off"/>
     <button class="btn-primary" onclick="loadList()">Entrar e carregar</button>
     <button class="btn-ghost" onclick="clearToken()">Esquecer token</button>
   </div>
-
   <div id="msg"></div>
-
   <div id="listContainer" hidden>
     <div class="list-head">
       <h2>Testemunhos</h2>
@@ -73,16 +66,83 @@ button:hover { border-color: var(--corona); color: var(--corona); }
     <div class="testimonials" id="list"></div>
   </div>
 </div>
-
 <script>
 const API_BASE = (() => {
   const host = window.location.hostname;
   if (host === 'localhost' || host === '127.0.0.1' || host === '') return 'http://localhost:3000';
   return 'https://cosmos-api-s0te.onrender.com';
 })();
-
 const TOKEN_KEY = 'cosmos-admin-token';
 const tokenInput = document.getElementById('token');
 const listEl = document.getElementById('list');
 const msgEl = document.getElementById('msg');
-const listContainer =
+const listContainer = document.getElementById('listContainer');
+const counter = document.getElementById('counter');
+const saved = localStorage.getItem(TOKEN_KEY);
+if (saved) tokenInput.value = saved;
+function showMsg(text, isError = false) {
+  msgEl.innerHTML = `<div class="msg ${isError ? 'error' : ''}">${text}</div>`;
+  setTimeout(() => { msgEl.innerHTML = ''; }, 5000);
+}
+function clearToken() {
+  localStorage.removeItem(TOKEN_KEY);
+  tokenInput.value = '';
+  listContainer.hidden = true;
+  showMsg('Token apagado deste browser.');
+}
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);
+}
+async function loadList() {
+  const token = tokenInput.value.trim();
+  if (!token) { showMsg('Cola um token antes de continuar.', true); return; }
+  localStorage.setItem(TOKEN_KEY, token);
+  listContainer.hidden = false;
+  listEl.innerHTML = '<div class="empty">A carregar…</div>';
+  try {
+    const res = await fetch(`${API_BASE}/api/testimonials`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    render(data.testimonials || []);
+    counter.textContent = `${data.testimonials?.length || 0} entradas`;
+  } catch (err) {
+    showMsg(`Erro a carregar: ${err.message}`, true);
+    listEl.innerHTML = '';
+  }
+}
+function render(items) {
+  if (!items.length) {
+    listEl.innerHTML = '<div class="empty">Sem testemunhos.</div>';
+    return;
+  }
+  listEl.innerHTML = items.map(t => {
+    const date = new Date(t.created_at).toLocaleString('pt-PT', { day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+    const name = t.name || '(anónimo)';
+    const place = t.place || '';
+    const meta = [name, place, date].filter(Boolean).join(' · ');
+    return `<div class="testimonial"><div class="testimonial-id">#${t.id}</div><div><div class="testimonial-meta">${escapeHtml(meta)}</div><div class="testimonial-story">${escapeHtml(t.story)}</div></div><button class="btn-danger" onclick="del(${t.id})">Apagar</button></div>`;
+  }).join('');
+}
+async function del(id) {
+  if (!confirm(`Apagar testemunho #${id}? Esta ação é permanente.`)) return;
+  const token = tokenInput.value.trim();
+  try {
+    const res = await fetch(`${API_BASE}/api/testimonials/${id}`, {
+      method: 'DELETE',
+      headers: { 'X-Admin-Token': token }
+    });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      if (res.status === 401) throw new Error('Token inválido');
+      throw new Error(err.error || `HTTP ${res.status}`);
+    }
+    showMsg(`Testemunho #${id} apagado.`);
+    loadList();
+  } catch (err) {
+    showMsg(`Erro a apagar: ${err.message}`, true);
+  }
+}
+tokenInput.addEventListener('keydown', e => { if (e.key === 'Enter') loadList(); });
+</script>
+</body>
+</html>
