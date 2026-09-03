@@ -8,7 +8,6 @@ services:
     name: cosmos
     runtime: static
     plan: free                     # Sites estáticos são grátis para sempre
-    region: frankfurt
     buildCommand: ""               # Nada para construir
     staticPublishPath: ./          # Serve a raiz do repo
     headers:
