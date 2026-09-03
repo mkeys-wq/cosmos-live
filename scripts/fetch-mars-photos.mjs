@@ -12,15 +12,23 @@ const KEY = process.env.NASA_API_KEY || 'DEMO_KEY';
 async function latestPhoto(rover) {
   const url = `https://api.nasa.gov/mars-photos/api/v1/rovers/${rover}/latest_photos?api_key=${KEY}`;
   console.log(`[MARS] A obter últimas fotos do ${rover}…`);
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`Mars Photos API respondeu ${res.status} para ${rover}`);
-  const data = await res.json();
-  const photos = data.latest_photos || [];
-  if (photos.length === 0) return null;
-  const preferred = photos.find(p =>
-    ['MAST', 'MASTCAM', 'MCZ_LEFT', 'MCZ_RIGHT', 'NAVCAM_LEFT', 'NAVCAM_RIGHT'].includes(p.camera?.name)
-  );
-  return preferred || photos[0];
+  try {
+    const res = await fetch(url);
+    if (!res.ok) {
+      console.warn(`[MARS] ${rover}: API respondeu ${res.status} — a saltar`);
+      return null;
+    }
+    const data = await res.json();
+    const photos = data.latest_photos || [];
+    if (photos.length === 0) return null;
+    const preferred = photos.find(p =>
+      ['MAST', 'MASTCAM', 'MCZ_LEFT', 'MCZ_RIGHT', 'NAVCAM_LEFT', 'NAVCAM_RIGHT'].includes(p.camera?.name)
+    );
+    return preferred || photos[0];
+  } catch (err) {
+    console.warn(`[MARS] ${rover}: erro — a saltar (${err.message})`);
+    return null;
+  }
 }
 
 async function main() {
@@ -49,7 +57,7 @@ async function main() {
 
   await mkdir(DATA_DIR, { recursive: true });
   await writeFile(OUT, JSON.stringify(output, null, 2) + '\n', 'utf-8');
-  console.log(`[MARS] Perseverance sol ${perseverance?.sol}, Curiosity sol ${curiosity?.sol}`);
+  console.log(`[MARS] Gravado. Perseverance sol=${perseverance?.sol || 'null'}, Curiosity sol=${curiosity?.sol || 'null'}`);
 }
 
-main().catch(err => { console.error('[MARS] Erro:', err); process.exit(1); });
+main().catch(err => { console.error('[MARS] Erro fatal:', err); process.exit(1); });
