@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "updated": "2026-01-01T00:00:00Z",
+    "updated": "2026-09-03T21:37:05.452Z",
     "note": "Placeholder inicial."
   },
   "missions": [
@@ -11,8 +11,21 @@
       "status": "active",
       "since": "1977",
       "description": "As sondas mais distantes da humanidade.",
-      "live": { "voyager1_km": 24600000000, "voyager2_km": 20500000000 },
-      "data": [["V1", "24.6 mil M km"], ["V2", "20.5 mil M km"]]
+      "live": {
+        "voyager1_km": 24931179033,
+        "voyager2_km": 20767185712,
+        "updated": "2026-09-03T21:37:05.447Z"
+      },
+      "data": [
+        [
+          "V1",
+          "24.9 mil M km"
+        ],
+        [
+          "V2",
+          "20.8 mil M km"
+        ]
+      ]
     },
     {
       "id": "perseverance",
