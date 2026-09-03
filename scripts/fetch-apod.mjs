@@ -1,10 +1,11 @@
 #!/usr/bin/env node
-import { writeFile } from 'node:fs/promises';
+import { mkdir, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const OUT = join(__dirname, '..', 'data', 'apod.json');
+const DATA_DIR = join(__dirname, '..', 'data');
+const OUT = join(DATA_DIR, 'apod.json');
 
 const KEY = process.env.NASA_API_KEY || 'DEMO_KEY';
 const URL = `https://api.nasa.gov/planetary/apod?api_key=${KEY}`;
@@ -30,6 +31,7 @@ async function main() {
     copyright: data.copyright || null
   };
 
+  await mkdir(DATA_DIR, { recursive: true });
   await writeFile(OUT, JSON.stringify(output, null, 2) + '\n', 'utf-8');
   console.log(`[APOD] Gravado: ${data.title} (${data.date})`);
 }
