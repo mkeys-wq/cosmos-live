@@ -1,0 +1,24 @@
+{
+  "_meta": {
+    "updated": "2026-01-01T00:00:00Z",
+    "source": "Celestrak (weekly)",
+    "note": "Placeholder inicial."
+  },
+  "totals": {
+    "active": 11500,
+    "tracked_objects": 40500,
+    "note_active": "Estimativa total.",
+    "note_tracked": "Inclui lixo espacial."
+  },
+  "constellations": [
+    { "key": "starlink", "name": "Starlink", "operator": "SpaceX · US", "count": 10020, "pct": 87 },
+    { "key": "oneweb", "name": "OneWeb", "operator": "Eutelsat · UK", "count": 654, "pct": 5.7 },
+    { "key": "guowang", "name": "Guowang", "operator": "China · CN", "count": 350, "pct": 3 },
+    { "key": "iridium", "name": "Iridium", "operator": "Iridium · US", "count": 75, "pct": 0.65 },
+    { "key": "outros", "name": "Outros", "operator": "vários", "count": 400, "pct": 3.5 }
+  ],
+  "warning": {
+    "title": "Kessler em construção",
+    "body": "Em dezembro de 2025 um satélite Starlink explodiu a 418 km."
+  }
+}
