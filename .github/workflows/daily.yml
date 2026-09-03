@@ -20,6 +20,9 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Ensure data directory exists
+        run: mkdir -p data
+
       - name: Fetch NASA APOD
         env:
           NASA_API_KEY: ${{ secrets.NASA_API_KEY }}
