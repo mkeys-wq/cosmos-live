@@ -1,14 +1,14 @@
 {
   "_meta": {
-    "updated": "2026-09-10T10:44:32.893Z",
+    "updated": "2026-09-12T10:11:33.699Z",
     "source": "NASA APOD (daily)",
     "note": "Atualizado por scripts/fetch-apod.mjs via GitHub Action diária."
   },
-  "date": "2026-09-10",
-  "title": "LDN 1295: The Giraffe Nebula",
-  "url": "https://apod.nasa.gov/apod/image/2609/LDN1295_giraffe_1024.jpg",
-  "hdurl": "https://apod.nasa.gov/apod/image/2609/LDN1295_giraffe.jpg",
-  "explanation": "What does this image look like to you?   Many see a giraffe facing right, with neck stretched high and long legs mid-stride (but some may see a squirrel instead).   The featured image shows LDN 1295, also called the Giraffe Nebula, in the constellation of the mythical queen of Aethiopia (Cassiopeia).   It is an object in the Lynds Catalogue of Dark Nebulas, compiled in 1962 by American astronomer Beverly Lynds, a pioneer for women in astronomy and astrophysics.   Dark nebulas are interstellar clouds of dust and gas that block the visible light of the stars behind them.   These nebulas are often faint and challenging targets for astrophotographers.   Why do we see animal shapes and faces in nebulas, clouds, and pretty much everywhere?   It is due to pareidolia, our tendency to look for familiar patterns.   Pareidolia may provide animals with an evolutionary advantage, for example in identifying (and avoiding) predators.     APOD's main NASA site is moving : From apod.nasa.gov to science.nasa.gov/apod",
+  "date": "2026-09-12",
+  "title": "Apollo 11: Catching Some Sun",
+  "url": "https://apod.nasa.gov/apod/image/2609/AS11-40-5872HR1024.jpg",
+  "hdurl": "https://apod.nasa.gov/apod/image/2609/AS11-40-5872HR.jpg",
+  "explanation": "Bright sunlight glints as long dark shadows mark this image of the surface of the Moon. It was taken on July 20, 1969, by Apollo 11 astronaut Neil Armstrong, the first to walk on the lunar surface. Pictured is the mission's lunar module, the Eagle, and spacesuited lunar module pilot Buzz Aldrin. Aldrin is unfurling a long sheet of foil also known as the Solar Wind Composition Experiment. Exposed facing the Sun, the foil trapped particles streaming outward in the solar wind, catching a sample of material from the Sun itself. Along with 22 kilograms of moon rocks and lunar soil samples, the solar wind collector was returned for analysis in earthbound laboratories.  APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
   "media_type": "image",
-  "copyright": "Alessandro Merga\n Text: \nCecilia Chirenti \n(NASA\nGSFC, \nUMCP, \nCRESST II)"
+  "copyright": null
 }
