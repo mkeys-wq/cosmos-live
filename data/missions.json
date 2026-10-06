@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "updated": "2026-10-05T13:46:05.141Z",
+    "updated": "2026-10-06T12:51:43.668Z",
     "note": "Placeholder inicial."
   },
   "missions": [
@@ -12,9 +12,9 @@
       "since": "1977",
       "description": "As sondas mais distantes da humanidade.",
       "live": {
-        "voyager1_km": 24977700207,
-        "voyager2_km": 20809328423,
-        "updated": "2026-10-05T13:46:05.138Z"
+        "voyager1_km": 24979113562,
+        "voyager2_km": 20810608756,
+        "updated": "2026-10-06T12:51:43.665Z"
       },
       "data": [
         [
