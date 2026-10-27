@@ -1,14 +1,14 @@
 {
   "_meta": {
-    "updated": "2026-10-25T10:50:40.083Z",
+    "updated": "2026-10-27T11:40:58.914Z",
     "source": "NASA APOD (daily)",
     "note": "Atualizado por scripts/fetch-apod.mjs via GitHub Action diária."
   },
-  "date": "2026-10-25",
+  "date": "2026-10-27",
   "title": "NASA Science",
   "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
   "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-  "explanation": "Is our universe haunted? It might look that way on this dark matter map. The gravity of unseen dark matter is the leading explanation for why galaxies rotate so fast, why galaxies orbit clusters so fast, why gravitational lenses so strongly deflect light, and how visible matter is distributed. The featured image from the American Museum of Natural History's Hayden Planetarium Space Show, Dark Universe, highlights one example of how pervasive dark matter might haunt our universe. In this frame from a detailed computer simulation, complex filaments of dark matter, shown in black, are strewn about the universe like spider webs, while the relatively rare clumps of familiar baryonic matter are colored orange. These simulations are good statistical matches to astronomical observations. In what is perhaps a scarier turn of events, dark matter -- although quite strange and in an unknown form -- is no longer thought to be the strangest source of gravity in the universe. That honor now falls to dark energy, a more uniform source of repulsive gravity that seems to now dominate the expansion of the entire universe.Tomorrow's picture: Orion the Great\t\t\t\t\t\t",
+  "explanation": " Sometimes it's night on the ground but day in the air. As the Earth rotates to eclipse the Sun, sunset rises upfrom the ground. Therefore, at sunset on the ground, sunlight still shines on clouds above. Under usual circumstances, a pretty sunset might be visible, but unusual noctilucent clouds float so high up they can be seen well after dark. Normally too dim to be seen, they may become visible just after sunset during the summer when illuminated by sunlight from below the horizon. Noctilucent clouds are the highest clouds and are known more technically as polar mesospheric clouds. Featured here as they appeared in early August, a network of blue noctilucent clouds was captured in the distant sky above a field of green grass near Linköping, Sweden, with trees in stark silhouette across the horizon. Much about noctilucent clouds has been discovered only in the past two decades, while how they form and evolve remains a topic of active research.Tomorrow's picture: round and round\t\t\t\t\t\t",
   "media_type": "image",
   "copyright": null
 }
