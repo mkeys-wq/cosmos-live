@@ -1,14 +1,14 @@
 {
   "_meta": {
-    "updated": "2026-11-04T13:51:26.876Z",
+    "updated": "2026-11-09T15:21:54.392Z",
     "source": "NASA APOD (daily)",
     "note": "Atualizado por scripts/fetch-apod.mjs via GitHub Action diária."
   },
-  "date": "2026-11-04",
+  "date": "2026-11-09",
   "title": "NASA Science",
   "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
   "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-  "explanation": "“I see” IC 342, the Hidden Galaxy! Today’s image peers through the plane of the Milky Way, through all its gas, dust and stars, to unveil this spiral galaxy. IC 342 (or Caldwell 5) is one of the brightest members of the IC 342/Maffei group of galaxies. Located about 10 million light years away, this group is quite close to the Local Group that includes our Milky Way. Inaccurate accounting of the crowded and dusty Milky Way foreground has led to misunderstandings in IC 342’s history, including the theory that the galaxy was ejected from the Local Group. IC 342 has its own dust intermittently blocking the glow of hydrogen gas, indicating the presence of bright, young stars. Magnetic field maps of IC 342 reveal that magnetic fields may contribute substantially to one of the biggest galactic puzzles: how do spiral arms form?Tomorrow's picture: open space\t\t\t\t\t\t",
+  "explanation": "Does the blue nebula look like the head of a witch? The nebula is known popularly as the Witch Head Nebula because, it is said, the nebula's shape resembles a Halloween-style caricature of a witch's head. Exactly how, though, can be a topic of imaginative speculation. What is clear is that IC 2118 is about 50 light-years across and made of gas and dust that points to -- because it has been partly eroded by -- the nearby star Rigel. One of the brighter stars in the constellation Orion, Rigel lies just below the center of the featured image. The blue color of the Witch Head Nebula and is caused not only by Rigel's intense blue starlight but also because the dust grains scatter blue light more efficiently than red. The same physical process causes Earth's daytime sky to appear blue, although the scatterers in planet Earth's atmosphere are molecules of nitrogen and oxygen.Tomorrow's picture: suddenly Saturn\t\t\t\t\t\t",
   "media_type": "image",
   "copyright": null
 }
