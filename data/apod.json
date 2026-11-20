@@ -1,14 +1,14 @@
 {
   "_meta": {
-    "updated": "2026-11-15T13:30:29.607Z",
+    "updated": "2026-11-20T14:57:58.359Z",
     "source": "NASA APOD (daily)",
     "note": "Atualizado por scripts/fetch-apod.mjs via GitHub Action diária."
   },
-  "date": "2026-11-15",
+  "date": "2026-11-20",
   "title": "NASA Science",
   "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
   "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-  "explanation": "Where will the next meteor appear? Even during a meteor shower, it is practically impossible to know. Therefore, a good way to enjoy a meteor shower is to find a place where you can sit comfortably and monitor a great expanse of dark sky. And it may be satisfying to share this experience with a friend. The meteor shower depicted was the 2022 Leonids and the view is from Hainan, China looking out over the South China Sea. Meteor streaks captured over a few hours were isolated and added to a foreground image recorded earlier. Leonid meteor streaks trace back to the constellation of Leo and were here seen streaking across the constellation of Orion. The bright red planet Mars appears near the top of the image. The Leonids peak in mid-November every year and so will peak again this week. Bonding over their love of astronomy, the two pictured meteor enthusiasts, shown celebrating their common birthday this month, were later married.Tomorrow's picture: open space",
+  "explanation": "On November 17, fans of interstellar spaceflight around planet Earth were invited to shine a message into the night sky. Traced by a flashlight beam switched on and off, the dashes and dots of a Morse code message captured in this time exposure from the Emirates Astronomical Observatory, are read V-G-R. That's a call sign for the Voyager 1 spacecraft currently in interstellar space some 26 billion kilometers away. How long did it take the message to reach humanity's most distant interstellar spacecraft? Traveling at the speed of light, the answer is one day. In fact, the Voyager 1 spacecraft was confirmed to reach its one light-day distance milestone on November 18, at 10:16:07 UTC, nearly 50 years after launch in 1977. For extra credit, fans of math can calculate that at one light-day per 50 years, Voyager 1 will reach its one light-year (365 light-days) distance milestone in about 18,250 years.Tomorrow's picture: pixels in space\t\t\t\t\t\t",
   "media_type": "image",
   "copyright": null
 }
